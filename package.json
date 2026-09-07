@@ -1,0 +1,26 @@
+{
+  "name": "ab-auto",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "AB Auto — location de voiture à l'aéroport Houari Boumediene, Alger",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "framer-motion": "^11.11.17",
+    "i18next": "^23.16.8",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-i18next": "^15.1.4"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11"
+  }
+}
