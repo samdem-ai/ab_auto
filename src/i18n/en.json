@@ -1,0 +1,98 @@
+{
+  "nav": {
+    "fleet": "Our cars",
+    "how": "How it works",
+    "why": "Why us",
+    "contact": "Contact",
+    "book": "Book now"
+  },
+  "hero": {
+    "eyebrow": "Car rental · Algiers Airport",
+    "title": "Your car is waiting at {{airport}} airport.",
+    "airport": "Houari Boumediene",
+    "subtitle": "Book in seconds and pick up your car right outside the terminal. Available 7 days a week, mileage included, 24h assistance.",
+    "ctaBook": "Book now",
+    "ctaFleet": "View the cars",
+    "statCars": "recent cars",
+    "statPickup": "airport delivery",
+    "statFrom": "from"
+  },
+  "fleet": {
+    "title": "Our fleet",
+    "subtitle": "From economical city cars to premium hatchbacks — all recent, maintained and ready at the terminal.",
+    "all": "All",
+    "perDay": "/ day",
+    "from": "from",
+    "book": "Book",
+    "tier": {
+      "eco": "Economy",
+      "compact": "Compact",
+      "premium": "Premium"
+    },
+    "spec": {
+      "seats": "{{count}} seats",
+      "doors": "{{count}} doors",
+      "manual": "Manual",
+      "auto": "Automatic",
+      "essence": "Petrol",
+      "diesel": "Diesel",
+      "ac": "Air conditioning"
+    }
+  },
+  "how": {
+    "title": "How it works",
+    "subtitle": "Three steps, no complicated paperwork.",
+    "steps": [
+      { "t": "Choose your car", "d": "Browse the fleet and pick the model that suits you, at a clear, upfront price." },
+      { "t": "Book on WhatsApp", "d": "A pre-filled message goes straight through — car, dates and your details. We confirm availability within minutes." },
+      { "t": "Pick up at the airport", "d": "We deliver the car to Houari Boumediene airport, keys in hand. Just drive." }
+    ]
+  },
+  "why": {
+    "title": "Why AB Auto",
+    "subtitle": "A local Algiers agency, built for travellers.",
+    "items": [
+      { "t": "Airport delivery", "d": "Pick-up and drop-off right at Houari Boumediene terminal, 7 days a week." },
+      { "t": "Mileage included", "d": "Drive freely — no nasty surprises on the bill." },
+      { "t": "24/7 assistance", "d": "A question or an issue? We answer any time, in French, Arabic or English." },
+      { "t": "Simple paperwork", "d": "Licence, ID or passport and a deposit. Booking confirmed in minutes." }
+    ]
+  },
+  "booking": {
+    "title": "Book your car",
+    "subtitle": "Fill it in and we'll reply on WhatsApp to confirm.",
+    "car": "Car",
+    "choose": "Choose a car",
+    "pickup": "Pick-up date",
+    "return": "Return date",
+    "name": "Your name",
+    "phone": "Your phone",
+    "namePlaceholder": "Full name",
+    "phonePlaceholder": "0X XX XX XX XX",
+    "submit": "Send on WhatsApp",
+    "note": "When you click, a pre-filled message opens in WhatsApp. No online payment.",
+    "msgTitle": "New booking request — AB Auto",
+    "msgCar": "Car",
+    "msgPickup": "Pick-up",
+    "msgReturn": "Return",
+    "msgName": "Name",
+    "msgPhone": "Phone",
+    "msgPrice": "Rate"
+  },
+  "contact": {
+    "title": "Contact & booking",
+    "subtitle": "Call us or drop by the agency — we speak French, Arabic and English.",
+    "call": "Call",
+    "whatsapp": "Message on WhatsApp",
+    "follow": "Follow us",
+    "address": "Houari Boumediene Airport, Algiers",
+    "hours": "Open 7 days · 8am – 8pm",
+    "mapCta": "Open in Google Maps"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "tagline": "Car rental · Houari Boumediene Airport, Algiers",
+    "photos": "Model photos: Wikimedia Commons contributors."
+  },
+  "lang": { "fr": "Français", "ar": "العربية", "en": "English" }
+}

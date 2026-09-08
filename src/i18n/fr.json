@@ -1,0 +1,98 @@
+{
+  "nav": {
+    "fleet": "Nos voitures",
+    "how": "Comment ça marche",
+    "why": "Pourquoi nous",
+    "contact": "Contact",
+    "book": "Réserver"
+  },
+  "hero": {
+    "eyebrow": "Location de voiture · Aéroport d'Alger",
+    "title": "Votre voiture vous attend à l'aéroport {{airport}}.",
+    "airport": "Houari Boumediene",
+    "subtitle": "Réservez en quelques secondes, récupérez votre véhicule dès la sortie du terminal. Prise en charge 7j/7, kilométrage inclus, assistance 24h.",
+    "ctaBook": "Réserver maintenant",
+    "ctaFleet": "Voir les voitures",
+    "statCars": "voitures récentes",
+    "statPickup": "livraison aéroport",
+    "statFrom": "à partir de"
+  },
+  "fleet": {
+    "title": "Notre flotte",
+    "subtitle": "Des citadines économiques aux berlines premium — toutes récentes, entretenues et prêtes au terminal.",
+    "all": "Toutes",
+    "perDay": "/ jour",
+    "from": "dès",
+    "book": "Réserver",
+    "tier": {
+      "eco": "Économique",
+      "compact": "Compacte",
+      "premium": "Premium"
+    },
+    "spec": {
+      "seats": "{{count}} places",
+      "doors": "{{count}} portes",
+      "manual": "Manuelle",
+      "auto": "Automatique",
+      "essence": "Essence",
+      "diesel": "Diesel",
+      "ac": "Climatisation"
+    }
+  },
+  "how": {
+    "title": "Comment ça marche",
+    "subtitle": "Trois étapes, aucune paperasse compliquée.",
+    "steps": [
+      { "t": "Choisissez votre voiture", "d": "Parcourez la flotte et sélectionnez le modèle qui vous convient, au tarif affiché en toute transparence." },
+      { "t": "Réservez sur WhatsApp", "d": "Un message pré-rempli part directement — voiture, dates et vos coordonnées. On confirme la disponibilité en quelques minutes." },
+      { "t": "Récupérez à l'aéroport", "d": "On vous livre le véhicule à l'aéroport Houari Boumediene, clés en main. Vous n'avez plus qu'à rouler." }
+    ]
+  },
+  "why": {
+    "title": "Pourquoi AB Auto",
+    "subtitle": "Une agence locale à Alger, pensée pour les voyageurs.",
+    "items": [
+      { "t": "Livraison à l'aéroport", "d": "Prise en charge et retour directement au terminal Houari Boumediene, 7j/7." },
+      { "t": "Kilométrage inclus", "d": "Roulez librement — pas de mauvaise surprise sur la facture." },
+      { "t": "Assistance 24h/24", "d": "Une question, un imprévu ? On répond à tout moment, en français, arabe ou anglais." },
+      { "t": "Dossier simple", "d": "Permis, pièce d'identité ou passeport et caution. Réservation confirmée en quelques minutes." }
+    ]
+  },
+  "booking": {
+    "title": "Réservez votre voiture",
+    "subtitle": "Remplissez, on vous répond sur WhatsApp pour confirmer.",
+    "car": "Voiture",
+    "choose": "Choisir une voiture",
+    "pickup": "Date de prise",
+    "return": "Date de retour",
+    "name": "Votre nom",
+    "phone": "Votre téléphone",
+    "namePlaceholder": "Nom et prénom",
+    "phonePlaceholder": "0X XX XX XX XX",
+    "submit": "Envoyer sur WhatsApp",
+    "note": "En cliquant, un message pré-rempli s'ouvre dans WhatsApp. Aucun paiement en ligne.",
+    "msgTitle": "Nouvelle demande de réservation — AB Auto",
+    "msgCar": "Voiture",
+    "msgPickup": "Prise",
+    "msgReturn": "Retour",
+    "msgName": "Nom",
+    "msgPhone": "Téléphone",
+    "msgPrice": "Tarif"
+  },
+  "contact": {
+    "title": "Contact & réservation",
+    "subtitle": "Appelez-nous ou passez à l'agence — on parle français, arabe et anglais.",
+    "call": "Appeler",
+    "whatsapp": "Écrire sur WhatsApp",
+    "follow": "Suivez-nous",
+    "address": "Aéroport Houari Boumediene, Alger",
+    "hours": "Ouvert 7j/7 · 8h – 20h",
+    "mapCta": "Ouvrir dans Google Maps"
+  },
+  "footer": {
+    "rights": "Tous droits réservés.",
+    "tagline": "Location de voiture · Aéroport Houari Boumediene, Alger",
+    "photos": "Photos des modèles : contributeurs Wikimedia Commons."
+  },
+  "lang": { "fr": "Français", "ar": "العربية", "en": "English" }
+}
