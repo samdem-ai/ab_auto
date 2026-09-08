@@ -1,0 +1,50 @@
+{
+  "picanto": {
+    "artist": "LuvsMG481",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:2018_Kia_Picanto_S_hatchback_front.jpg",
+    "term": "Kia Picanto 2021"
+  },
+  "symbol": {
+    "artist": "Wikipedia lead image",
+    "license": "see source",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Renault_Symbol_1.6_Expression_2015.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+    "term": "Renault Symbol"
+  },
+  "tipo": {
+    "artist": "RL GNZLZ",
+    "license": "CC BY-SA 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:2019_Fiat_Tipo_1.6_Easy.jpg",
+    "term": "Fiat Tipo 2021 sedan"
+  },
+  "corsa": {
+    "artist": "Alexander Migl",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:2020_Opel_Corsa_F.jpg",
+    "term": "Opel Corsa F 2020"
+  },
+  "clio2023": {
+    "artist": "Vauxford",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:2019_Renault_Clio_Iconic_TCE_1.0_Front.jpg",
+    "term": "Renault Clio V 2020"
+  },
+  "clio2024": {
+    "artist": "© M 93",
+    "license": "CC BY-SA 3.0 de",
+    "source": "https://commons.wikimedia.org/wiki/File:Renault_Clio_(V,_Facelift)_%E2%80%93_f_02092025.jpg",
+    "term": "Renault Clio V facelift 2023"
+  },
+  "p208": {
+    "artist": "Wikipedia lead image",
+    "license": "see source",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Peugeot_208_PureTech_130_EAT8_Allure_GT-Line_%28II%29_%E2%80%93_f_17102021.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+    "term": "Peugeot 208"
+  },
+  "golf8": {
+    "artist": "Vauxford",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:2020_Volkswagen_Golf_Style_1.5_Front.jpg",
+    "term": "Volkswagen Golf VIII 2020"
+  }
+}
