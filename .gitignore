@@ -5,3 +5,6 @@ dist-ssr
 .DS_Store
 .vercel
 npm-debug.log*
+
+# TypeScript build cache
+*.tsbuildinfo
