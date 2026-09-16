@@ -23,6 +23,9 @@
   --red-deep: #b60e16;
   --red-ink: #ffffff;
 
+  --on-ink: #ffffff; /* text sitting on an --ink fill */
+  --nav-bg: rgba(255, 255, 255, 0.86);
+
   --maxw: 1240px;
 
   --font-display: "Anton", "Cairo", Impact, sans-serif;
@@ -32,6 +35,25 @@
 :lang(ar) {
   --font-display: "Cairo", "Anton", sans-serif;
   --font-body: "Cairo", "Manrope", system-ui, sans-serif;
+}
+
+/* ---- dark mode ---- */
+:root[data-theme="dark"] {
+  --paper: #0b0b0d; /* page + former light sections */
+  --paper-2: #141417;
+  --ink-dark: #17171b; /* dark bands: slightly lifted so they read as panels */
+  --ink-dark-2: #1e1e23;
+
+  --ink: #f1f1ee;
+  --ink-soft: #cbcbc4;
+  --muted: #9a9a92;
+  --dim: #6f6f68;
+
+  --hair: #26262b;
+  --hair-strong: #3a3a41;
+
+  --on-ink: #0b0b0d;
+  --nav-bg: rgba(11, 11, 13, 0.86);
 }
 
 * {
@@ -163,7 +185,7 @@ button {
   padding: 15px 26px;
   border: 1.5px solid var(--ink);
   background: var(--ink);
-  color: #fff;
+  color: var(--on-ink);
   border-radius: 0;
   transition: background 0.18s, color 0.18s, transform 0.18s, border-color 0.18s;
 }
@@ -185,7 +207,7 @@ button {
 }
 .btn-line:hover {
   background: var(--ink);
-  color: #fff;
+  color: var(--on-ink);
 }
 .btn-line.on-dark {
   color: #fff;
@@ -238,7 +260,7 @@ button {
   position: sticky;
   top: 0;
   z-index: 60;
-  background: rgba(255, 255, 255, 0.86);
+  background: var(--nav-bg);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid transparent;
   transition: border-color 0.2s;
@@ -255,6 +277,15 @@ button {
 .nav-logo img {
   height: 26px;
   width: auto;
+}
+.nav-logo .brand-dark {
+  display: none;
+}
+:root[data-theme="dark"] .nav-logo .brand-light {
+  display: none;
+}
+:root[data-theme="dark"] .nav-logo .brand-dark {
+  display: block;
 }
 .nav-links {
   display: flex;
@@ -335,6 +366,13 @@ button {
 }
 .lang-btn:hover {
   border-color: var(--ink);
+}
+.theme-btn {
+  padding: 9px;
+  color: var(--ink);
+}
+.theme-btn svg {
+  display: block;
 }
 .lang-menu {
   position: absolute;
@@ -597,8 +635,8 @@ button {
   position: absolute;
   inset-block-start: 14px;
   inset-inline-start: 14px;
-  background: #fff;
-  color: var(--ink);
+  background: var(--ink);
+  color: var(--on-ink);
   font-family: var(--font-display);
   font-weight: 700;
   font-size: 11px;
@@ -1000,7 +1038,7 @@ button {
 }
 .social:hover {
   background: var(--ink);
-  color: #fff;
+  color: var(--on-ink);
   border-color: var(--ink);
 }
 .contact-cta {

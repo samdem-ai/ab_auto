@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { BRAND, telHref } from "../config";
 import { IconMenu, IconClose } from "./icons";
 import LangSwitch from "./LangSwitch";
+import ThemeToggle from "./ThemeToggle";
 
 const LINKS = [
   { id: "fleet", href: "#fleet" },
@@ -27,7 +28,8 @@ export default function Navbar() {
     <header className={`nav ${scrolled ? "scrolled" : ""}`}>
       <div className="container nav-inner">
         <a className="nav-logo" href="#top" aria-label={BRAND.name}>
-          <img src="/assets/brand/wordmark-light.png" alt={`${BRAND.name} — ${BRAND.tagline}`} />
+          <img className="brand-light" src="/assets/brand/wordmark-light.png" alt={`${BRAND.name} — ${BRAND.tagline}`} />
+          <img className="brand-dark" src="/assets/brand/wordmark-dark.png" alt={`${BRAND.name} — ${BRAND.tagline}`} />
         </a>
 
         <nav className={`nav-links ${open ? "open" : ""}`}>
@@ -45,6 +47,7 @@ export default function Navbar() {
           <a className="nav-phone" href={telHref(BRAND.phones[0])}>
             {BRAND.phones[0]}
           </a>
+          <ThemeToggle />
           <LangSwitch />
           <button
             className="nav-toggle"
