@@ -478,9 +478,9 @@ button {
   background: var(--ink-dark);
   color: #fff;
   overflow: hidden;
-  border-block: 1px solid var(--ink-dark);
+  border-block: 1px solid rgba(255, 255, 255, 0.08);
   padding-block: 16px;
-  margin-top: clamp(48px, 6vw, 80px);
+  margin-top: 0;
 }
 .marquee-track {
   display: inline-flex;
