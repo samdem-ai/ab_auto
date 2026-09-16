@@ -3,7 +3,15 @@ import { useTranslation } from "react-i18next";
 import { CARS } from "../data/cars";
 import { BRAND } from "../config";
 import Reveal from "./Reveal";
+import DatePicker from "./DatePicker";
 import { IconWhatsApp } from "./icons";
+
+const parseDMY = (s: string): Date | null => {
+  const m = /^(\d{2})\/(\d{2})\/(\d{4})$/.exec(s);
+  if (!m) return null;
+  const d = new Date(+m[3], +m[2] - 1, +m[1]);
+  return isNaN(d.getTime()) ? null : d;
+};
 
 interface Props {
   selectedCar: string;
@@ -19,11 +27,8 @@ export default function Booking({ selectedCar, setSelectedCar }: Props) {
   const [car, setCar] = useState(selectedCar);
   useEffect(() => setCar(selectedCar), [selectedCar]);
 
-  // format free typing into dd/mm/yyyy
-  const fmtDate = (v: string) => {
-    const d = v.replace(/\D/g, "").slice(0, 8);
-    return [d.slice(0, 2), d.slice(2, 4), d.slice(4, 8)].filter(Boolean).join("/");
-  };
+  const today = new Date();
+  const pickupDate = parseDMY(pickup);
 
   const buildMessage = () => {
     const c = CARS.find((x) => x.id === car);
@@ -80,30 +85,27 @@ export default function Booking({ selectedCar, setSelectedCar }: Props) {
 
             <div className="field">
               <label htmlFor="pickup">{t("booking.pickup")}</label>
-              <input
+              <DatePicker
                 id="pickup"
-                type="text"
-                inputMode="numeric"
-                placeholder="jj/mm/aaaa"
-                pattern="\d{2}/\d{2}/\d{4}"
-                maxLength={10}
                 value={pickup}
-                onChange={(e) => setPickup(fmtDate(e.target.value))}
-                required
+                onChange={(v) => {
+                  setPickup(v);
+                  const nd = parseDMY(v);
+                  const rd = parseDMY(ret);
+                  if (nd && rd && rd < nd) setRet("");
+                }}
+                min={today}
+                placeholder="jj/mm/aaaa"
               />
             </div>
             <div className="field">
               <label htmlFor="ret">{t("booking.return")}</label>
-              <input
+              <DatePicker
                 id="ret"
-                type="text"
-                inputMode="numeric"
-                placeholder="jj/mm/aaaa"
-                pattern="\d{2}/\d{2}/\d{4}"
-                maxLength={10}
                 value={ret}
-                onChange={(e) => setRet(fmtDate(e.target.value))}
-                required
+                onChange={setRet}
+                min={pickupDate ?? today}
+                placeholder="jj/mm/aaaa"
               />
             </div>
 

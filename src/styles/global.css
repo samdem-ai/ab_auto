@@ -833,6 +833,121 @@ button {
   gap: 8px;
 }
 
+/* ---- date picker ---- */
+.dp {
+  position: relative;
+}
+.dp-trigger {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background: transparent;
+  border: none;
+  border-bottom: 1.5px solid var(--hair-dark);
+  padding: 12px 2px;
+  color: #fff;
+  font-family: inherit;
+  font-size: 16px;
+  text-align: start;
+  transition: border-color 0.15s;
+}
+.dp-trigger:hover {
+  border-bottom-color: rgba(255, 255, 255, 0.35);
+}
+.dp-trigger.empty {
+  color: rgba(255, 255, 255, 0.35);
+}
+.dp-trigger svg {
+  color: rgba(255, 255, 255, 0.6);
+  flex: none;
+}
+.dp-pop {
+  position: absolute;
+  z-index: 80;
+  top: calc(100% + 8px);
+  inset-inline-start: 0;
+  width: 300px;
+  max-width: min(300px, 86vw);
+  background: var(--ink-dark-2);
+  border: 1px solid var(--hair-dark);
+  box-shadow: 0 24px 60px -20px rgba(0, 0, 0, 0.8);
+  padding: 14px;
+}
+.dp-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.dp-head button {
+  background: transparent;
+  border: 1px solid var(--hair-dark);
+  color: #fff;
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+}
+.dp-head button:hover {
+  border-color: var(--red);
+  color: var(--red);
+}
+.dp-month {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 17px;
+  text-transform: capitalize;
+  letter-spacing: 0.01em;
+  color: #fff;
+}
+.dp-dows {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-bottom: 4px;
+}
+.dp-dow {
+  text-align: center;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--dim);
+  padding: 4px 0;
+}
+.dp-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+}
+.dp-empty {
+  aspect-ratio: 1;
+}
+.dp-day {
+  aspect-ratio: 1;
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.85);
+  font-family: inherit;
+  font-size: 14px;
+  font-variant-numeric: tabular-nums;
+  border-radius: 0;
+  transition: background 0.12s, color 0.12s;
+}
+.dp-day:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.1);
+}
+.dp-day.sel {
+  background: var(--red);
+  color: #fff;
+  font-weight: 700;
+}
+.dp-day:disabled {
+  color: rgba(255, 255, 255, 0.2);
+  cursor: not-allowed;
+}
+
 /* ---- contact ---- */
 .contact-grid {
   display: grid;
